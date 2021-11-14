@@ -1,0 +1,41 @@
+name: m_placement_tracker
+description: A new Flutter project.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  #Image Uploader
+  image_picker: ^0.6.7+11
+  cupertino_icons: ^0.1.2
+
+  #Firebase
+  firebase_core: "0.7.0"
+  flutter_svg: ^0.19.1
+  carousel_slider: ^4.0.0
+  cloud_firestore: ^0.16.0+1
+  firebase_auth: ^0.20.1
+  fluttertoast: ^8.0.8
+  provider: ^6.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# flutter_icons:
+#   android: "launcher_icon"
+#   ios: true
+#   image_path: "assets/icons/AppLogo.png"
+
+flutter:
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    - assets/icons/
