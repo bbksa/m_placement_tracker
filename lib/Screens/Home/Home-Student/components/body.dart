@@ -87,6 +87,48 @@ class Body extends StatelessWidget {
               ),
             ),
 
+            Container(
+              margin: EdgeInsets.fromLTRB(20, 5, 20, 5),
+              child: Row(children: [
+                Container(
+                  height: 140,
+                  child: Card(
+                    child: Column(children: [
+                      Icon(Icons.person, size: 100, color: Colors.blue.shade400),
+                      Text('Profile' + '\n' + '', textAlign: TextAlign.center, style: TextStyle(fontWeight: FontWeight.bold)),
+                    ]),
+                  ),
+                ),
+                Container(
+                  height: 140,
+                  child: Card(
+                    child: Column(children: [
+                      Icon(Icons.update, size: 100, color: Colors.blue.shade400),
+                      Text('Updates' + '\n' + '', textAlign: TextAlign.center, style: TextStyle(fontWeight: FontWeight.bold)),
+                    ]),
+                  ),
+                ),
+                Container(
+                  height: 140,
+                  child: Card(
+                    child: Column(children: [
+                      Icon(Icons.work, size: 100, color: Colors.blue.shade400),
+                      Text('Placement' + '\n' + '', textAlign: TextAlign.center, style: TextStyle(fontWeight: FontWeight.bold)),
+                    ]),
+                  ),
+                ),
+                Container(
+                  height: 140,
+                  child: Card(
+                    child: Column(children: [
+                      Icon(Icons.question_answer, size: 100, color: Colors.blue.shade400),
+                      Text('Test' + '\n' + '', textAlign: TextAlign.center, style: TextStyle(fontWeight: FontWeight.bold)),
+                    ]),
+                  ),
+                ),
+              ]),
+            ),
+
             Card(
               child: Column(
                 mainAxisSize: MainAxisSize.min,

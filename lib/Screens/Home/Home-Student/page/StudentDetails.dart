@@ -64,7 +64,7 @@ class StudentDetailsPage extends StatelessWidget {
             TextFormField(
               validator: (value) {
                 if (value == null || value.isEmpty) {
-                  return 'Please enter your name.';
+                  return 'Please enter your father name.';
                 }
                 return null;
               },
@@ -83,7 +83,7 @@ class StudentDetailsPage extends StatelessWidget {
             TextFormField(
               validator: (value) {
                 if (value == null || value.isEmpty) {
-                  return 'Please enter your name.';
+                  return 'Please enter your Date of Birth.';
                 }
                 return null;
               },
@@ -102,7 +102,7 @@ class StudentDetailsPage extends StatelessWidget {
             TextFormField(
               validator: (value) {
                 if (value == null || value.isEmpty) {
-                  return 'Please enter some text';
+                  return 'Please enter your email.';
                 }
                 return null;
               },
@@ -121,7 +121,7 @@ class StudentDetailsPage extends StatelessWidget {
             TextFormField(
               validator: (value) {
                 if (value == null || value.isEmpty) {
-                  return 'Please enter your name.';
+                  return 'Please enter your phone number.';
                 }
                 return null;
               },
@@ -140,7 +140,7 @@ class StudentDetailsPage extends StatelessWidget {
             TextFormField(
               validator: (value) {
                 if (value == null || value.isEmpty) {
-                  return 'Please enter your name.';
+                  return 'Please enter your Permanent Address.';
                 }
                 return null;
               },
@@ -172,7 +172,7 @@ class StudentDetailsPage extends StatelessWidget {
             TextFormField(
               validator: (value) {
                 if (value == null || value.isEmpty) {
-                  return 'Please enter your name.';
+                  return 'Please enter your GPA.';
                 }
                 return null;
               },
@@ -191,7 +191,7 @@ class StudentDetailsPage extends StatelessWidget {
             TextFormField(
               validator: (value) {
                 if (value == null || value.isEmpty) {
-                  return 'Please enter your name.';
+                  return 'Please enter your GPA.';
                 }
                 return null;
               },
@@ -210,7 +210,7 @@ class StudentDetailsPage extends StatelessWidget {
             TextFormField(
               validator: (value) {
                 if (value == null || value.isEmpty) {
-                  return 'Please enter your name.';
+                  return 'Please enter your GPA.';
                 }
                 return null;
               },

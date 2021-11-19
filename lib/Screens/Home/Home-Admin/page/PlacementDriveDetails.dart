@@ -32,45 +32,8 @@ class PlacementDriveDetailsPage extends StatelessWidget {
               ),        
             ),
 
-            // Column(children: [
-            //   Row(children: [
-            //     Text('Row 1' ),
-            //     Spacer(),
-            //     Icon(Icons.account_box),
-            //   ]),
-            //   Row(children: [
-            //     Padding(
-            //         padding: EdgeInsets.all(16.0),
-            //         child: Column(children: [
-            //           Text("Data 1 Title"),
-            //           Text("Data 1.1"),
-            //           Text("Data 1.2"),
-            //         ])),
-            //     Padding(
-            //         padding: EdgeInsets.all(16.0),
-            //         child: Column(children: [
-            //           Text("Data 2 Title"),
-            //           Text("Data 2.1"),
-            //           Text("Data 2.2"),
-            //         ])),
-            //     Padding(
-            //         padding: EdgeInsets.all(16.0),
-            //         child: Column(children: [
-            //           Text("Data 3 Title"),
-            //           Text("Data 3.1"),
-            //           Text("Data 3.2"),
-            //         ])),
-            //     Padding(
-            //         padding: EdgeInsets.all(16.0),
-            //         child: Column(children: [
-            //           Text("Data 4 Title"),
-            //           Text("Data 4.1"),
-            //           Text("Data 4.2"),
-            //         ])),
-            //   ]),
-            // ]),
-
             Container(
+              margin: EdgeInsets.fromLTRB(0, 5, 0, 0),
               color: Colors.transparent,
               child: Container(
               padding: EdgeInsets.all(10.0),
@@ -190,6 +153,107 @@ class PlacementDriveDetailsPage extends StatelessWidget {
                         child: const Text('Submit'),
                       ),
 
+                    ],
+                  ),
+                )
+              ),
+            ), 
+
+            Container(
+              margin: EdgeInsets.fromLTRB(0, 10, 0, 0),
+              color: Colors.transparent,
+              child: Container(
+                padding: EdgeInsets.all(10.0),
+                decoration: BoxDecoration(
+                  color: Colors.blue.shade50,
+                  borderRadius: BorderRadius.all(Radius.circular(10.0))
+                ),
+                child: new Center(
+                  child: Column(
+                    children: <Widget>[
+                      const SizedBox(height: 12),
+                      Text('No. of Companies visited', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
+                      const SizedBox(height: 12),
+                      Table(  
+                        defaultColumnWidth: FixedColumnWidth(110.0),  
+                        border: TableBorder.all(  
+                          color: Colors.black12,  
+                          style: BorderStyle.solid,  
+                          width: 1
+                        ),  
+                        children: [  
+                          TableRow( children: [  
+                            Column(children:[Text('S.No.', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),)]), 
+                            Column(children:[Text('Company Name', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15))]),  
+                            Column(children:[Text('Date', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15))]),  
+                            Column(children:[Text('Remove', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15))])  
+                          ]),
+                          TableRow( children: [
+                            Column(children:[Text('1', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15))]),  
+                            Column(children:[Text('TCS', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15))]),
+                            Column(children:[Text('22-10-2021', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15))]), 
+                            Column(children:[TextButton(
+                                              style: ButtonStyle(
+                                                foregroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                                              ),
+                                              onPressed: () { },
+                                              child: Icon(Icons.delete, color: Colors.red),
+                            )])
+                          ]), 
+                          TableRow( children: [
+                            Column(children:[Text('2', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15))]),  
+                            Column(children:[Text('Microsoft', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15))]),
+                            Column(children:[Text('27-10-2021', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15))]), 
+                            Column(children:[TextButton(
+                                              style: ButtonStyle(
+                                                foregroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                                              ),
+                                              onPressed: () { },
+                                              child: Icon(Icons.delete, color: Colors.red),
+                            )])
+                          ]),
+                          TableRow( children: [
+                            Column(children:[Text('3', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15))]),  
+                            Column(children:[Text('Google', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15))]),
+                            Column(children:[Text('07-11-2021', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15))]), 
+                            Column(children:[TextButton(
+                                              style: ButtonStyle(
+                                                foregroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                                              ),
+                                              onPressed: () { },
+                                              child: Icon(Icons.delete, color: Colors.red),
+                            )])
+                          ]), 
+                          TableRow( children: [
+                            Column(children:[Text('4', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15))]),  
+                            Column(children:[Text('Tesla', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15))]),
+                            Column(children:[Text('12-11-2021', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15))]), 
+                            Column(children:[TextButton(
+                                              style: ButtonStyle(
+                                                foregroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+                                              ),
+                                              onPressed: () { },
+                                              child: Icon(Icons.delete, color: Colors.red),
+                            )])
+                          ]),  
+                        ],  
+                      ), 
+                      Center(
+                        child: Row(
+                          children: <Widget>[
+                            const SizedBox(height: 12, width: 100),
+                            ElevatedButton(
+                              onPressed: () {},
+                              child: const Text('Add'),
+                            ),
+                            const SizedBox(height: 12, width: 100),
+                            ElevatedButton(
+                              onPressed: () {},
+                              child: const Text('Edit'),
+                            ),
+                          ],
+                        ), 
+                      ),
                     ],
                   ),
                 )

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MockTestPage extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) => Scaffold(
         appBar: AppBar(
@@ -71,67 +72,105 @@ class MockTestPage extends StatelessWidget {
                   ),        
                 ),
 
-                Card(
-                  color: Colors.amber.shade200,
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: <Widget>[
-                      const ListTile(
-                        leading: Icon(Icons.question_answer),
-                        title: Text('Sample Question-2', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22)),
-                        subtitle: Text('Question asked by TCS in 2020.', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.end,
+                const SizedBox(height: 10),
+                Container(
+                  color: Colors.transparent,
+                  child: Container(
+                  padding: EdgeInsets.all(10.0),
+                  decoration: BoxDecoration(
+                    color: Colors.amber.shade50,
+                    borderRadius: BorderRadius.all(Radius.circular(10.0))),
+                    child: new Center(
+                      child: Column(
                         children: <Widget>[
-                          TextButton(
-                            child: const Text('View',  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
-                            onPressed: () { /* ... */ },
-                          ),
-                          const SizedBox(width: 8),
-                          TextButton(
-                            child: const Text('Attempt',  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
-                            onPressed: () { /* ... */ },
-                          ),
-                          const SizedBox(width: 8),
-                        ],
-                      ),
-                    ],
-                  ),        
-                ),
+                          Text('Set Question', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
 
-                Card(
-                  color: Colors.amber.shade200,
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: <Widget>[
-                      const ListTile(
-                        leading: Icon(Icons.question_answer),
-                        title: Text('Sample Question-3', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22)),
-                        subtitle: Text('Question asked by NecLife in 2020.', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        children: <Widget>[
-                          TextButton(
-                            child: const Text('View',  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
-                            onPressed: () { /* ... */ },
+                          const SizedBox(height: 12),
+                          TextFormField(
+                            validator: (value) {
+                              if (value == null || value.isEmpty) {
+                                return 'Please enter test name.';
+                              }
+                              return null;
+                            },
+                            textInputAction: TextInputAction.next,
+                            decoration: InputDecoration(
+                              prefixIcon: Icon(Icons.question_answer),
+                              contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
+                              hintText: "Test Name",
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                            )
                           ),
-                          const SizedBox(width: 8),
-                          TextButton(
-                            child: const Text('Attempt',  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
-                            onPressed: () { /* ... */ },
+
+                          const SizedBox(height: 12),
+                          TextFormField(
+                            validator: (value) {
+                              if (value == null || value.isEmpty) {
+                                return 'Please enter test description.';
+                              }
+                              return null;
+                            },
+                            textInputAction: TextInputAction.next,
+                            decoration: InputDecoration(
+                              prefixIcon: Icon(Icons.details),
+                              contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
+                              hintText: "Description",
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                            )
                           ),
-                          const SizedBox(width: 8),
+
+                          const SizedBox(height: 12),
+                          TextFormField(
+                            validator: (value) {
+                              if (value == null || value.isEmpty) {
+                                return 'Please enter test Date.';
+                              }
+                              return null;
+                            },
+                            textInputAction: TextInputAction.next,
+                            decoration: InputDecoration(
+                              prefixIcon: Icon(Icons.calendar_view_day),
+                              contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
+                              hintText: "Date",
+                              border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                            )
+                          ),
+                          
+                          const SizedBox(height: 12),
+                          Card(
+                            child: new InkWell(
+                              onTap: () {
+                              },
+                              child: Container(
+                                width: 250.0,
+                                height: 50.0,
+                                child: ListTile(
+                                  leading: Icon(Icons.upload),
+                                  title: Text('Select Question', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+                                ),                              
+                              ),
+                            ),
+                          ),
+                          
+                          const SizedBox(height: 12),
+                          ElevatedButton(
+                            onPressed: () {},
+                            child: const Text('Update'),
+                          ),
                         ],
                       ),
-                    ],
-                  ),        
+                    )
+                  ),
                 ),
 
               ],
             ),
           ),
-
       );
 }

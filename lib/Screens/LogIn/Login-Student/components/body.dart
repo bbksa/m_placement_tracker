@@ -23,8 +23,9 @@ class Body extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              "LOG IN",
-              style: TextStyle(fontWeight: FontWeight.bold),
+              "LOG IN" + '\n\n' + "As a Student",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+              textAlign: TextAlign.center,
             ),
             SizedBox(height: size.height * 0.03),
             SvgPicture.asset(

@@ -11,6 +11,11 @@ Institutes is a place where students enhance their skills and learn how they can
 5. Mock Test Series [PD / Technical]
 6. Automatically Updates/Notifications
 
+# GitHub Link
+
+https://github.com/bbksa/m_placement_tracker.git
+git@github.com:bbksa/m_placement_tracker.git
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
