@@ -19,7 +19,7 @@ dependencies:
   flutter_svg: ^0.19.1
   carousel_slider: ^4.0.0
   cloud_firestore: ^0.16.0+1
-  firebase_auth: ^0.20.1
+  firebase_auth: "^0.20.1"
   fluttertoast: ^8.0.8
   provider: ^6.0.1
   circular_profile_avatar: ^2.0.0
